@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #6667a1;
+    width: 100%;
+}
+.maincontainer{
+    height: 100vh;
+    overflow: hidden;
+   position: fixed;
+   z-index: -10;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+.bg-image{
+    background-position: center;
+    background-size: cover;
+    background-color: #6667a1;
+    width: 100%;
+    opacity: 0.4;
+}
+.form-head{
+    z-index: 1000;
+}
+.form-head>.head1{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    z-index: 10;
+}
+
+.dform{
+    width: 50%;
+    margin: 40px auto;
+    height: auto;
+    background-color: #2a2a49e3;
+    padding: 10px; 
+}
+
+.label-up{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.label-up>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40%;
+    align-items: center;
+    gap: 10px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 30px;
+    border: none;
+}
+fieldset p,label{
+    color: white;
+    font-size: 20px;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.inp-special{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+}
+.improve{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+a{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #37af65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+::placeholder{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+option:disabled {
+    color: light-dark(graytext, rgb(170, 170, 170));
+}

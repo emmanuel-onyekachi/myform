@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>form</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <!-- <img src="./images/survey-form-background.jpeg" alt="" class="bg-image"> -->
+        <img src="./images/me_student2.jpg" alt="" class="bg-image">
+        
+    </div>
+
+    <div class="form-head">
+        <h1 class="head1">GlobalSoft Technology Survey Form</h1>
+        <p class="head1">Thank you for taking the time to help us improve the platform</p>  
+    </div>
+
+    <div class="dform">
+        <form action="#">
+            <fieldset>
+                <div class="bio infoA">
+                    <label for="fname" >Name</label>
+                     <input type="text" id="fname" name="fname" placeholder="Enter your first name" class="inp-special" required>
+                </div>
+                
+                <div class="bio infoB">
+                    <label for="email" >Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="inp-special" required>
+                </div>
+                <div class="bio infoC">
+                    <label for="Age" >Age</label>
+                    <input type="number" id="age" name="age" placeholder="Age" min="10" max="100" class="inp-special" required>
+                </div>
+                <div class="bio infoD">
+                    <label for="option" >
+                        <p>Which option best describe your current role?</p>
+                    </label>
+                    <select id="dropdown" name="role" id="best">
+                        <option value="" disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">full time job</option>
+                        <option value="learner">full time learner</option>
+                        <option value="notsay">prefer not to say</option>
+                        <option value="others">others</option>
+                    </select>
+                </div>
+               
+                <div>
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="recommend" class="label-up">
+                        <div>
+                            <input type="radio" value="definitely" name="camp"> <p>Definitely</p>
+                        </div>
+                        <div>
+                            <input type="radio" value="maybe" name="camp"> 
+                            <p>Maybe</p>
+                        </div>
+                        <div>
+                            <input type="radio" value="never" name="camp"> 
+                                <p>Not sure</p>
+                           
+                        </div>
+                       
+                    </label>
+                </div>
+
+                <div>
+                    <p>What is your favorite feature of GlobalSoft Tech.?</p>
+                    <label for="feature" >
+                        <select name="favourite" id="camp">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="challenges">challenges</option>
+                            <option value="project">project</option>
+                            <option value="community">community</option>
+                            <option value="open source">open source</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label for="frontend" class="improve">
+                        <input type="checkbox" name="frontend"> 
+                        <p>Front-end Project</p>
+                    </label>
+                    <label for="backend" class="improve">
+                        <input type="checkbox" name="frontend"> 
+                        <p>Back-end Project</p>
+                    </label>
+                    <label for="data" class="improve">
+                        <input type="checkbox" name="frontend"> 
+                        <p>Data Visualization</p>
+                    </label>
+                    <label for="chalenges" class="improve">
+                        <input type="checkbox" name="challenges"> 
+                        <p>Challenges</p>
+                    </label>
+                    <label for="open-source" class="improve">
+                        <input type="checkbox" name="open"> 
+                        <p>Open-source community</p>
+                    </label>
+                    <label for="helproom" class="improve">
+                        <input type="checkbox" name="helproom"> 
+                        <p>Gitter help rooms</p>
+                    </label>
+                    <label for="videos" class="improve">
+                        <input type="checkbox" name="videos"> 
+                        <p>Videos</p>
+                    </label>
+                    <label for="meetups" class="improve">
+                        <input type="checkbox" name="meetups"> 
+                        <p>City meet-ups</p>
+                    </label>
+                    <label for="wikki" class="improve">
+                        <input type="checkbox" name="wikki"> 
+                        <p>Wikki</p>
+                    </label>
+                    <label for="forums" class="improve">
+                        <input type="checkbox" name="forums"> 
+                        <p>Forums</p>
+                    </label>
+                    <label for="additional" class="improve">
+                        <input type="checkbox" name="course"> 
+                        <p>Additional course</p>
+                    </label>
+                </div>
+
+                <div>
+                    <p>Any comments or suggestions?</p>   
+                    <textarea name="comment" id="comments"  placeholder="Enter your comments here" class="comment-here">
+                    </textarea> 
+                </div>
+                
+                <a href="#">Submit</a>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
